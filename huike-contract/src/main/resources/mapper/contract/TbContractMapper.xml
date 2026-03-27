@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.huike.contract.mapper.TbContractMapper">
+
+    <resultMap id="BaseResultMap" type="com.huike.contract.domain.TbContract">
+            <id property="id" column="id" jdbcType="VARCHAR"/>
+            <result property="phone" column="phone" jdbcType="VARCHAR"/>
+            <result property="contractNo" column="contract_no" jdbcType="VARCHAR"/>
+            <result property="name" column="name" jdbcType="VARCHAR"/>
+            <result property="subject" column="subject" jdbcType="CHAR"/>
+            <result property="activityId" column="activity_id" jdbcType="BIGINT"/>
+            <result property="activityName" column="activity_name" jdbcType="VARCHAR"/>
+            <result property="courseId" column="course_id" jdbcType="BIGINT"/>
+            <result property="courseName" column="course_name" jdbcType="VARCHAR"/>
+            <result property="channel" column="channel" jdbcType="CHAR"/>
+            <result property="status" column="status" jdbcType="CHAR"/>
+            <result property="createBy" column="create_by" jdbcType="VARCHAR"/>
+            <result property="deptId" column="dept_id" jdbcType="BIGINT"/>
+            <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="fileName" column="file_name" jdbcType="VARCHAR"/>
+            <result property="contractOrder" column="contract_order" jdbcType="FLOAT"/>
+            <result property="discountType" column="discount_type" jdbcType="VARCHAR"/>
+            <result property="coursePrice" column="course_price" jdbcType="FLOAT"/>
+            <result property="processInstanceId" column="process_instance_id" jdbcType="VARCHAR"/>
+            <result property="businessId" column="business_id" jdbcType="BIGINT"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,phone,contract_no,
+        name,subject,activity_id,
+        activity_name,course_id,course_name,
+        channel,status,create_by,
+        dept_id,create_time,file_name,
+        contract_order,discount_type,course_price,
+        process_instance_id,business_id
+    </sql>
+</mapper>

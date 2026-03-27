@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.huike.clues.mapper.TbCourseMapper">
+
+    <resultMap id="BaseResultMap" type="com.huike.clues.domain.TbCourse">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="code" column="code" jdbcType="VARCHAR"/>
+            <result property="name" column="name" jdbcType="VARCHAR"/>
+            <result property="subject" column="subject" jdbcType="CHAR"/>
+            <result property="price" column="price" jdbcType="INTEGER"/>
+            <result property="applicablePerson" column="applicable_person" jdbcType="CHAR"/>
+            <result property="info" column="info" jdbcType="VARCHAR"/>
+            <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="isDelete" column="is_delete" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,code,name,
+        subject,price,applicable_person,
+        info,create_time,is_delete
+    </sql>
+</mapper>

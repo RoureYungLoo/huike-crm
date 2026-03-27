@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.huike.clues.mapper.TbClueMapper">
+
+    <resultMap id="BaseResultMap" type="com.huike.clues.domain.TbClue">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="name" column="name" jdbcType="VARCHAR"/>
+            <result property="phone" column="phone" jdbcType="VARCHAR"/>
+            <result property="channel" column="channel" jdbcType="CHAR"/>
+            <result property="activityId" column="activity_id" jdbcType="BIGINT"/>
+            <result property="sex" column="sex" jdbcType="CHAR"/>
+            <result property="age" column="age" jdbcType="INTEGER"/>
+            <result property="weixin" column="weixin" jdbcType="VARCHAR"/>
+            <result property="qq" column="qq" jdbcType="VARCHAR"/>
+            <result property="level" column="level" jdbcType="CHAR"/>
+            <result property="subject" column="subject" jdbcType="CHAR"/>
+            <result property="status" column="status" jdbcType="CHAR"/>
+            <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="createBy" column="create_by" jdbcType="VARCHAR"/>
+            <result property="falseCount" column="false_count" jdbcType="INTEGER"/>
+            <result property="nextTime" column="next_time" jdbcType="TIMESTAMP"/>
+            <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="transfer" column="transfer" jdbcType="CHAR"/>
+            <result property="endTime" column="end_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,name,phone,
+        channel,activity_id,sex,
+        age,weixin,qq,
+        level,subject,status,
+        create_time,create_by,false_count,
+        next_time,update_time,transfer,
+        end_time
+    </sql>
+</mapper>

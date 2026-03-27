@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.huike.clues.mapper.TbRulePoolMapper">
+
+    <resultMap id="BaseResultMap" type="com.huike.clues.domain.TbRulePool">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="limitTime" column="limit_time" jdbcType="INTEGER"/>
+            <result property="limitTimeType" column="limit_time_type" jdbcType="CHAR"/>
+            <result property="warnTime" column="warn_time" jdbcType="INTEGER"/>
+            <result property="warnTimeType" column="warn_time_type" jdbcType="CHAR"/>
+            <result property="repeatGetTime" column="repeat_get_time" jdbcType="INTEGER"/>
+            <result property="repeatType" column="repeat_type" jdbcType="CHAR"/>
+            <result property="maxNunmber" column="max_nunmber" jdbcType="INTEGER"/>
+            <result property="type" column="type" jdbcType="CHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,limit_time,limit_time_type,
+        warn_time,warn_time_type,repeat_get_time,
+        repeat_type,max_nunmber,type
+    </sql>
+</mapper>
